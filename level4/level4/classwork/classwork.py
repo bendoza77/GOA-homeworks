@@ -9,7 +9,12 @@ print(num2)
 #print(num)
 #აქ გამოიტანს 40 რადგან num = 40 -ის შემდეგ არის დაწერილი print ამიტომ რაც ყველაზე ბოლოს არის დაწერილი იმას გამოიტანს.
 
-price = 45
-balance = 60
-discount = 0.6 * price
-print(balance - discount)
+balance = 100
+discount_precent = 20
+discount = balance * discount_precent/100
+total = balance - discount
+print((total))
+
+num1 = 24
+num2 = 20
+print(num1 + num2)

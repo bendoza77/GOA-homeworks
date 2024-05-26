@@ -568,5 +568,5 @@ forward(15)
 right(90)
 forward(10)
 end_fill()
-exitonclick()
 
+exitonclick()
