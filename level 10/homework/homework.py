@@ -89,14 +89,11 @@ while num1 < 10:
 
     #4)
 
-secret = 123
-password = secret
+num1 = 20
 
-print(int(input("Enter you password: ")))
-if password == secret:
-    print("correct")
-else: password != secret
-print("try again")
+while num1 < 40:
+    print("my name is gabriel jobava")
+    num1 += 5
 
     #5)
 
