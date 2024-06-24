@@ -9,13 +9,13 @@ elif age > 13 and age < 20:
 else:
     print("you are grown")
 
-    # Task 2
+# Task 2
 
 num1 = 1
 
 while num1 < 100:
-        if  num1 == 55:
-            pass
-        else:
-            print(num1)
-            num1 += 1
+    if num1 > 40 and num1 < 50:
+        pass
+    else:
+        print(num1)
+        num1 += 1

@@ -26,24 +26,11 @@ for i in range(1, 100):
 sum1 = 0
 
 for i in range (1,1000):
-    if i ==  (500,600):
+    if i > 500 and i < 600:
         pass
-else:
-    print(sum1)
-
-
-
-
-# Task 6
-
-num1 = 1
-sum1 = 0
-
-while sum1 < 10:
-    sum1 * num1
-    num1 += 1
-    print(num1)
-
+    else:
+        sum1 += i
+        print(i)
 
 
 
