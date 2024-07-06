@@ -71,4 +71,4 @@ x = int(input("slice1: "))
 y = int(input("slice2: "))
 
 
-print(list1[-x:y])
+print(list1[-x:-y])
