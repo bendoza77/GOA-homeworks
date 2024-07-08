@@ -17,7 +17,7 @@ sum1 = 0
 
 for i in range(1, 100):
     sum1 += i
-    print(sum1)
+print(sum1)
 
 
 
@@ -30,12 +30,28 @@ for i in range (1,1000):
         pass
     else:
         sum1 += i
-        print(i)
+print(i)
 
 
+# 5 
+num1 = 1
+num2 = 1
+guess = int(input("guess number: "))
+
+while num1 == num2:
+    num1 = 10
+    print(input("Try again: "))
 
 
+#6 
 
+num1 = 1
+mult1 = 1
+
+while num1 < 10:
+    mult1 *= num1
+    num1 +=1 
+print(mult1)
 
 
 # Task 7
