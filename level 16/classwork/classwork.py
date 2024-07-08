@@ -18,8 +18,7 @@ print(programing_language[3:7])
     # Task 3
 
 programing_language = ["html", "css", "c#", "c++", "javascript", "java", "phyton", "php", "malbolge", "GO"]
-                        # -10     # -9     # -8   # -7       # -6         # -5     # -4     # -3     # -2         # -1
-
+                        # -10  # -9  # -8    # -7     # -6        # -5   # -4     # -3     # -2      # -1
 print(programing_language[-10:-7])
 print(programing_language[-3:])
 print(programing_language[-7:-3])
