@@ -9,10 +9,12 @@ for i in int1:
 
     # Task 3
 
-str1 = ["#data", "#luka", "#lasha", "#gabriel"]
+str1 = ["data", "luka", "lasha", "gabriel"]
+
+x = "#"
 
 for i in str1:
-    print(i)
+    print(x + i)
 
 
     # Task 4
