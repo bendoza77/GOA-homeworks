@@ -1,0 +1,279 @@
+#name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    font-size: 17px;
+    color: gray;
+}
+
+#Login{
+    background-color: rgb(19, 137, 206);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    animation-duration: 2.5s;
+    animation-name: inherit;
+    cursor: pointer;
+
+}
+
+#Login:hover{
+    background-color: rgb(19, 137, 210);
+    border-radius: 24px;
+    animation-name: inherit;
+}
+
+
+#form{
+    color: gray;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+
+}
+
+.email{
+    background-color: white;
+    color: gray;
+    border-radius: 0%;
+}
+
+#link a{
+    text-decoration: none;
+}
+
+.link1 a{
+    text-decoration: none;
+}
+
+#sign-up{
+    width: 280px;
+    height: 40px;
+    background-color: rgb(19, 137, 206);
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 10px ;
+    cursor: pointer;
+}
+
+#sign-up:hover{
+    background-color: rgb(19, 137, 210);
+    border-radius: 15px;
+}
+
+#sign-up a{
+    text-decoration: none;
+    color: white;
+}
+
+#link2 a{
+    text-decoration: none;
+    color: white;
+}
+
+#log-in{
+    width: 270px;
+    height: 40px;
+    background-color: rgb(19, 137, 206);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#log-in a{
+    text-decoration: none;
+    color: white;
+}
+
+#log-in:hover{
+    background-color: rgb(19, 137, 210);
+    border-radius: 15px;
+}
+
+#password{
+    color: black;
+    margin-left: 110px;
+}
+
+#password a{
+    text-decoration: none;
+}
+
+#resetpasswor{
+    margin-top: 150px;
+}
+
+#reset{
+    width: 270px;
+    height: 40px;
+    background-color: rgb(19, 137, 206);
+    color: white;
+    border-radius: 10px;
+}
+
+#reset:hover{
+    background-color: rgb(19, 137, 210);
+    border-radius: 15px;
+}
+
+#Instagram{
+    margin-top: -35px;
+    margin-left: 170px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#login1{
+    margin-left: -120px;
+}
+
+#login-button{
+    width: 270px;
+    height: 40px;
+    background-color: rgb(19, 137, 206);
+    color: white;
+    border-radius: 10px;
+}
+
+#login-button a {
+    text-decoration: none;
+    color: white;
+}
+
+#login-button:hover{
+    background-color: rgb(19, 137, 210);
+    border-radius: 15px;
+}
+
+#text{
+    color: black;
+    margin-top: 150px;
+}
+
+#text a{
+    text-decoration: none;
+}
+
+#about{
+    animation-direction: alternate;
+}
+
+#navigator a{
+    text-decoration: none;
+    color: black;
+}
+
+#p1{
+    margin-left: 100px;
+    color: black;
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+iframe {
+    margin-left: 90px;
+    width: 60%;
+    height: 450px;
+}
+
+#p2{
+    margin-left: 90px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#color{
+    margin-left: 490px;
+    margin-top: 390px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(206, 47, 167);
+}
+
+#p3{
+    margin-left: 490px;
+    color: black;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#p4{
+    margin-left: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(206, 47, 167);
+}
+
+#p5{
+    color: black;
+    margin-left: 90px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+
+}
+
+#p6{
+    color: gray;
+    margin-left: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+#p7{
+    margin-left: 1090px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(206, 47, 167)
+}
+
+#p8{
+    margin-left: 1090px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: black;
+}
+
+#p9{
+    margin-left: 10190px;
+    color: gray;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#video{
+    margin-left: 790px;
+    width: 80%;
+    height: 190px;
+}
+
+#p10{
+    margin-left: 90px;
+    color: rgb(206, 47, 167);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+#p11{
+    margin-left: 90px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#p12{
+    margin-left: 90px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black
+
+}
+
+#about-istagram{
+    font-size: 30px;
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
