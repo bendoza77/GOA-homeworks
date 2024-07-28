@@ -145,24 +145,24 @@ def past_arithmethick(list):
 print(past_arithmethick([1,3,4,5,2]))
 
 
-#   Task 17
-
-def manual_upper(string):
+#   Task 17 
+def make_upper(string):
+    result = ""
     for i in range(len(string)):
-        if len(string) == string[i]:
-            print(string.upper())
+        if i % 2 == 0:
+            result = result + string[i].upper()
         else:
-            break
+            result = result + string[i]
 
-print(manual_upper("hello"))
+            return result
 
-
+print(make_upper("hello"))
 
 #   Task 18
 
 def mult(list_number):
     for i in list_number:
-        print(i ** 2)
+        return i ** 2
 
 print(mult([3,12,5,2,6]))
 
