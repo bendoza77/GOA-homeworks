@@ -30,7 +30,10 @@ def numbers(list1):
     return unqiu_list
 
 
-print(numbers([1,2,3,1]))
+print(numbers([1,2,3,4,5,1,4,2,3]))
+
+
+
 
 
 
