@@ -1,0 +1,251 @@
+#shop1 {
+    margin-left: 1130px;
+    background-color: rgb(91, 46, 4);
+    width: 170px;
+    height: 40px;
+    border-radius: 15px;
+    position: fixed;
+    margin-top: -44px;
+}
+
+#shop1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#shop1:hover {
+    border-radius: 18px;
+    background-color: rgb(147, 75, 8);
+    transition: 0.5s;
+}
+
+#contact1 {
+    margin-left: 1360px;
+    position: fixed;
+    background-color:  rgb(91, 46, 4);
+    height: 40px;
+    width: 170px;
+    border-radius: 15px;
+    margin-top: -44px;
+}
+
+#contact1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#contact1:hover {
+    border-radius: 18px;
+    background-color: rgb(147, 75, 8);
+    transition: 0.5s;
+}
+
+.container {
+    width: 1690px;
+    height: 60px;
+    position: fixed;
+}
+
+.glass {
+    background: linear-gradient(135deg, rgb(225,225,225,0.1), rgb(225,225,225,0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 1px solid rgb(225,225,225,0.18);
+    box-shadow: 0 3px  32px 0 rgb(0,0,0,0.37);
+    position: fixed;
+}
+
+
+#p1 {
+    margin-left: 180px;
+    margin-top: -42px;
+    color: rgb(147, 75, 8);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#logo {
+    margin-left: 80px;
+    margin-top: 3px;
+}
+
+
+#shop {
+    color: rgb(147, 75, 8);
+    font-size: 50px;
+}
+
+
+#photo {
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+#p2 {
+    margin-left: 1120px;
+    margin-top: -450px;
+    color: rgb(147, 75, 8);
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#p3 {
+    margin-left: 1000px;
+    margin-top: -5px;
+    font-size: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(91, 46, 4);
+}
+
+#photo1 {
+    margin-left: 960px;
+    margin-top: 300px;
+}
+
+
+#p4 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 150px;
+    margin-top: -350px;
+}
+
+#photo2 {
+    margin-left: 100px;
+    margin-top: 300px;
+
+}
+
+#p5 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 1100px;
+    margin-top: -350px;
+}
+
+#photo4 {
+    margin-left: 250px;
+    margin-top: 300px;
+    cursor: pointer;
+}
+
+#photo4:hover {
+    width: 35%;
+    transition: 0.5s;
+}
+
+#photo3 {
+    margin-left: 850px;
+    margin-top: -700px;
+    cursor: pointer;
+}
+
+#photo3:hover {
+    width: 35%;
+    transition: 0.5s;
+}
+
+#title1 {
+    font-size: 50px;
+    color: rgb(147, 75, 8);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+#rectangle {
+    width: 300px;
+    height: 300px;
+    background-color: rgb(147, 75, 8);
+    margin-top: 250px;
+    margin-left: 370px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 20px  40px 0 rgb(0,0,0,0.37);
+}
+
+#rectangle:hover {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(147, 75, 8);
+    transition: 0.5s;
+}
+
+
+#rectangle1 {
+    width: 300px;
+    height: 300px;
+    color: white;
+    background-color: rgb(147, 75, 8);
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 50%;
+    margin-top: 250px;
+    margin-left: 430px;
+    cursor: pointer;
+    box-shadow: 0 20px  40px 0 rgb(0,0,0,0.37);
+}
+
+#rectangle1:hover {
+    width: 350px;
+    height: 350px;
+    background-color: rgb(147, 75, 8);
+    transition: 0.5s;
+}
+
+#rectangle2 {
+    width: 360px;
+    height: 360px;
+    color: white;
+    background-color: rgb(147, 75, 8);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 280px;
+    box-shadow: 0 20px  40px 0 rgb(0,0,0,0.37);
+}
+
+#rectangle2:hover {
+    width: 390px;
+    height: 390px;
+    background-color: rgb(147, 75, 8);
+    transition: 0.5s;
+}
+
+
+#p6 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(147, 75, 8);
+}
+
+
+#number {
+    color: white;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+#ph5 {
+    margin-left: 460px;
+    margin-top: 10px;
+}
+
+#ph6 {
+    margin-left: 650px;
+}
+
+#ph7 {
+    margin-top: -100px;
+}
+
+#container1 {
+    background-color: rgb(147, 75, 8);
+    border-radius: 20px;
+}
