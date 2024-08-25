@@ -1,0 +1,23 @@
+table {
+    border: 1px solid;
+    border-color: rgb(25, 203, 25);
+    border-collapse:collapse;
+}
+
+th,td{
+    border: 1px,solid,  rgb(25, 203, 25);
+}
+
+
+tr:nth-child(odd) {
+    background-color: rgb(212, 208, 208);
+}
+
+tr:nth-child(1) {
+    background-color: green;
+    color: white;
+}
+
+td {
+    align-items: left;
+}
