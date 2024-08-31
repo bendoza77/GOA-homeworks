@@ -1,0 +1,73 @@
+ol {
+    list-style-type: disc;
+}
+
+#ol1 {
+    list-style-type: circle;
+}
+
+#ol2 {
+    list-style-type: square;
+}
+
+#ol3 {
+    list-style-type: none;
+}
+
+#ol4 {
+    list-style-position: inside;
+}
+
+#ol5 {
+    list-style-type: upper-alpha ;
+}
+
+
+/* unorder list */
+
+ul {
+    list-style-type: lower-roman;
+}
+
+#ul1 {
+    list-style-type: georgian;
+}
+
+#ul2 {
+    list-style-type: lower-greek;
+}
+
+#ul3 {
+    list-style-position: inside;
+}
+
+/* Task 2 */
+
+input[type="email"]{
+    border: none;
+}
+
+input[type="password"]{
+    border-radius: 15px;
+}
+
+/* Task 3 */
+
+
+button {
+    width: 150px;
+    height: 30px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: rgb(104, 97, 97);
+    border-radius: 18px;
+}
+
+button:active {
+    color: black;
+}
