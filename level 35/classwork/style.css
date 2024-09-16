@@ -1,0 +1,31 @@
+#div1{
+    position: static;
+}
+
+.div-2{
+    position: absolute;
+    left: 150px;
+    background-color: red;
+}
+
+#div1{
+    background-color: red;
+    width: 50px;
+    position: relative;
+    left: 150px;
+}
+
+.div1{
+    position: relative;
+    left: 150px;
+}
+
+
+#fixed{
+    position: fixed;
+}
+
+#new_div2{
+    position: sticky;
+    top: 0px;
+}

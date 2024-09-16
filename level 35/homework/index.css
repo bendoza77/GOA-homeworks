@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    background-color: #ffb300;
+    font-family:  Roboto, sans-serif;;
+    color: white;
+    font-weight: bold;
+}
+
+.container{
+    background-color: #675d50;
+    font-size: 1.2rem;
+    height: 70px;
+    position: fixed;
+    width: 1689px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.container .navbar{
+    justify-content: space-between;
+}
+
+
+.navbar ul li{
+    list-style-type: none;
+}
+
+.container .navbar ul li{
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.navbar a{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+    color: #abc4aa;
+}
+
+
+@media screen and  (min-width:390px) and (max-width: 767px){
+    .container{
+        height: 100%;
+    }
+    .container .navbar{
+        flex-direction: column;
+    }
+}
+
+h2{
+    color: white;
+}
+
+#img1{
+    box-shadow: 0px 0px 50px;
+    margin-top: 150px;
+    margin-left: 150px;
+}
+
+#p1{
+    font-weight: bold;
+    margin-left: 900px;
+    font-size: 50px;
+    margin-top: -350px;
+}
+
+#img2{
+    margin-top: 550px;
+    margin-left: 900px;
+    box-shadow: 0px 0px 50px;
+}
+
+#p2{
+    font-size: 50px;
+    margin-top: -250px;
+    margin-left: 50px;
+}
+
+
+
+#img3 {
+    margin-left: 50px;
+    margin-top: 450px;
+    box-shadow: 0px 0px 50px;
+}
+
+#p4{
+    font-size: 50px;
+    margin-top: -250px;
+    margin-left: 900px;
+}
+
+
+.glass{
+    box-shadow: 0px 0px 50px;
+    margin-top: 450px;
+}
+
+form{
+    margin-top: 350px;
+    text-align: center;
+}
+
+
+#name{
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#name:hover{
+    background-color: rgb(198, 191, 191);
+}
+
+
+#email{
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+#email:hover{
+    background-color: rgb(198, 191, 191);
+}
+
+#password{
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+#password:hover{
+    background-color: rgb(198, 191, 191);
+}
+
+#submit{
+    width: 250px;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 18px;
+    background-color: rgb(77, 70, 70);
+    cursor: pointer;
+}
