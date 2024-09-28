@@ -1,0 +1,54 @@
+#div1{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: 0.5s;
+}
+
+#div1:hover{
+    transform: translate(50px);
+}
+
+#div2{
+    margin-top: 150px;
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition: 0.5s;
+}
+
+#div2:hover{
+    transform: scale(2);
+}
+
+
+#div3{
+    margin-top: 150px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+
+#div3:hover{
+    transform: scale(1.5);
+}
+
+#div3:active{
+    transform: scale(1);
+}
+
+
+#div4{
+    margin-top: 150px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(9, 186, 250);
+    transition: 0.5s;
+}
+
+#div4:hover{
+    transform: rotate(180deg);
+}
+

@@ -1,0 +1,35 @@
+#a1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+#a1:hover{
+    transform: rotateX(180deg);
+}
+
+#a2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transition: 1s;
+    margin-top: 50px;
+}
+
+#a2:hover{
+    transform: rotateY(360deg);
+}
+
+#a3{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    transition: 0.5s;
+}
+
+#a3:hover{
+    transform: rotate(180deg);
+    transform-origin: top right;
+}
