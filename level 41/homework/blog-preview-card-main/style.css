@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    font-family: Figtree, serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:  hsl(0, 0%, 100%);
+    border: 1px solid black;
+    width: 20%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 10px 10px 1px black;
+}
+
+.top_image{
+    border-radius: 10px;
+}
+
+.blog_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.blog_title{
+    background-color: hsl(47, 88%, 63%);
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 6px;
+    align-items: flex-start;
+}
+
+.glass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.blog_time{
+    font-weight: 500;
+    color: black;
+    margin-top: 20px;
+    display: flex;
+}
+
+h2{
+    font-family: 800;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+p{
+    margin-top: 0;
+    font-size: 16px;
+    color: gray;
+    text-align: left;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.avatar_image{
+    width: 20%;
+}
+
+.avatar_name{
+    margin-left: 15px;
+}

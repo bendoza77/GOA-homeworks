@@ -1,0 +1,108 @@
+/* Task 2 */
+
+
+.loader{
+    display: flex;
+}
+
+.loader::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 15px solid black;
+    border-top-color: rgb(86, 224, 255);
+    box-shadow: 0px 0px 10px rgb(35, 229, 255);
+    animation: loader 0.9s linear infinite;
+}
+
+@keyframes loader{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Task 3 */
+
+
+.cube1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.cube{
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    animation: moved 5s linear infinite;
+}
+
+@keyframes moved{
+    0%{
+        transform: translate(0px);
+    }
+    25%{
+        transform: translate(800px);
+    }
+    50%{
+        transform: translate(-800px);
+    }
+    75%{
+        transform: translate(0px);
+    }
+    90%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+/* Task 4 */
+
+.my_animation{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-top: 300px;
+    animation: myAnimate 2s linear infinite;
+}
+
+@keyframes myAnimate{
+    0%{
+        border-radius: 0px;
+        background-color: rgb(251, 57, 57);
+        box-shadow: 0px 0px 0px;
+    }
+    20%{
+        border-radius: 15px;
+        background-color: rgb(77, 255, 77);
+        box-shadow: 0px 0px 10px yellow;
+    }
+    40%{
+        border-radius: 25px;
+        background-color: rgb(249, 249, 46);
+        box-shadow: 0px 0px 40px red;
+    }
+    65%{
+        border-radius: 35px;
+        background-color: rgb(255, 91, 118);
+        box-shadow: 0px 0px 60px orange;
+    }
+
+    90%{
+        border-radius: 50px;
+        background-color: rgb(255, 184, 53);
+        box-shadow: 0px 0px 80px blue;
+    }
+    100%{
+        border-radius: 0px;
+        background-color: rgb(251, 57, 57);
+        box-shadow: 0px 0px 100px green;
+    }
+}
