@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+   background-color:  hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Red Hat Display", serif;
+}
+
+h1{
+    font-size: 30px;
+}
+
+main{
+    background-color: white;
+    display: flex;
+    width: 25%;
+    height: 85%;
+    border-radius: 15px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image{
+    background-image: url("../images/illustration-hero.svg");
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.bottom_side{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.left_side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+p{
+    font-size: 16px;
+    color: rgb(146, 145, 145);
+    font-weight: 500;
+}
+
+.cost{
+    color: gray;
+}
+
+.info{
+    display: grid;
+    row-gap: 30px;
+    margin-top: -30px;
+}
+
+.plan{
+    background-color:   hsl(225, 100%, 98%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.plan_title{
+    font-weight: 900;
+}
+
+.annual_plan{
+    line-height: 25px;
+    margin-right: 70px;
+}
+
+
+.chng{
+    color:  hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+button{
+    background-color: hsl(245, 75%, 52%);
+    width: 360px;
+    border-radius: 10px;
+    height: 45px;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+
+.order{
+    font-weight: 900;
+    color: rgb(127, 127, 127);
+    font-size: 14px;
+}
