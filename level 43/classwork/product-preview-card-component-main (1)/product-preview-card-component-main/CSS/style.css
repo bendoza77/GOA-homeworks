@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 40%;
+    height: 60%;
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+}
+
+.left_side{
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.right_side{
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.title p{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-family: "Montserrat", serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.main_title h1{
+    color: hsl(212, 21%, 14%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    line-height: 35px;
+}
+
+.main_font p{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.new_cost{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", serif;
+}
+
+.cost{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.old_cost{
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat", serif;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+button{
+    width: 90%;
+    color:  hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+
