@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    width: 40%;
+    height: 180vh;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 750px;
+}
+
+.image{
+    height: 18%;
+    background-image: url("../assets/images/image-omelette.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.main_image{
+    width: 100%;
+}
+
+.p1{
+    color:  hsl(30, 10%, 34%);
+    font-family: "Outfit", serif;
+    margin-top: 10px;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.info{
+    margin-top: 30px;
+}
+
+h3{
+    font-family: "Outfit", serif;
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation_time{
+    background-color:  hsl(330, 100%, 98%);
+    padding: 47px;
+    padding-top: 25px;
+    border-radius: 10px;
+    padding-bottom: 25px;
+    margin-top: 20px;
+    font-family: "Outfit", serif;
+    font-size: 14px;
+}
+
+.preparation_time li span{
+    color: black;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.preparation_time li{
+    line-height: 30px;
+}
+
+.preparation_time h3{
+    margin-left: -20px;
+}
+
+.preparation_time ul{
+    margin-top: 10px;
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+}
+
+.ingredientes{
+    color:  hsl(30, 10%, 34%);
+    font-family: "Outfit", serif;
+    font-size: 14px;
+    margin-top: 20px;
+    border-bottom: 1px solid hsla(32, 10%, 37%, 0.195);
+    padding-bottom: 20px;
+}
+
+.ingredientes span{
+    margin-left: 15px;
+}
+
+.ingredientes li{
+    line-height: 30px;
+}
+
+.ingredientes ul{
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.instruction span{
+    color: black;
+    font-weight: 600;
+    font-family: "Outfit", serif;
+}
+
+.instruction li{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    line-height: 23px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.instruction p{
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit", serif;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.instruction{
+    border-bottom: 1px solid hsla(32, 10%, 37%, 0.195);
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.instruction ol{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.nutrition{
+    font-family: "Outfit", serif;
+    margin-top: 20px;
+}
+
+.nutrition p{
+    color: hsl(30, 10%, 34%);
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.name{
+    color: hsl(30, 10%, 34%);
+}
+
+.calories .number{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 20px;
+    
+}
+
+.calories{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid hsla(32, 10%, 37%, 0.195);;
+    padding-bottom: 10px;
+}
+
+.calories .name{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.calories .n1{
+    margin-left: 200px;
+}
+
+.calories .n2{
+    margin-left: 214px;
+}
+
+.calories .n3{
+    margin-left: 206px;
+}
+
+
+.calories1{
+    display: flex;
+    flex-direction: row;
+}
+
+.calories1 .name{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.calories1 .number{
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+    margin-left: 230px;
+    margin-top: 20px;
+}

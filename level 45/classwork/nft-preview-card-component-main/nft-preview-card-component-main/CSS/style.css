@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Outfit", serif;
+}
+
+main{
+    background-color: hsl(216, 50%, 16%);
+    width: 22%;
+    height: 80vh;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 100px hsl(215, 65%, 12%);
+}
+
+.image{
+    background-image: url("../images/image-equilibrium.jpg");
+    height: 55%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+h2{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+p{
+    color: hsl(215, 51%, 70%);
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.money{
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.time_div{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.money_div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 90px;
+}
+
+.container div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10%;
+    gap: 20px;
+    border-top: 1px solid hsla(215, 96%, 79%, 0.53);
+    margin-top: 15px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30%;
+    margin-top: 20px;
+}
+
+.user_image{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+span{
+    color: hsl(0, 0%, 100%);
+}
+
