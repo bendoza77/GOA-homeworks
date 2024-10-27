@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "League Spartan", serif;
+}
+
+main{
+    box-shadow: 0 0 100px rgb(214, 211, 211);
+    background-color: hsl(0, 0%, 100%);
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 80%;
+    height: 80%;
+    display: flex;
+}
+
+.top_side{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   column-gap: 150px;
+}
+
+
+h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 40px;
+}
+
+.title_p{
+    color:   hsl(303, 10%, 53%);
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.title{
+    width: 140%;
+}
+
+
+.one_star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(300, 14%, 93%);
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 100px;
+
+}
+
+
+.stars{
+    display: grid;
+    grid-template-rows: repeat(3, 45px);
+    row-gap: 15px;
+}
+
+.two_star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(300, 14%, 93%);
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 30px;
+    padding-right: 10px;
+    margin-right: 45px;
+}
+
+.three_star{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: hsl(300, 14%, 93%);
+    padding: 10px;
+    border-radius: 6px;
+    margin-left: 70px;
+    width: 350px;
+}
+
+
+
+.p1{
+    margin-left: 25px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.user_image{
+    border-radius: 50%;
+    width: 12%;
+}
+
+.user_name{
+    margin-left: 15px;
+}
+
+.user_name{
+    font-weight: 700;
+    color: white;
+    line-height: 20px;
+}
+
+span{
+    color:  hsl(333, 80%, 67%);
+}
+
+.info{
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.user_one{
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 6px;
+    width: 75%;
+    margin: auto;
+}
+
+.user_three{
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 6px;
+    width: 75%;
+    margin: auto;
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
+.user_two{
+    background-color: hsl(300, 43%, 22%);
+    padding: 30px;
+    border-radius: 6px;
+    width: 75%;
+    margin: auto;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.bottom_side{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bottom_side{
+    width: 250%;
+}

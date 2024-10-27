@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Young+Serif&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+main{
+    background-color:  hsl(0, 0%, 100%);
+    width: 45%;
+    height: 58%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+
+.left_side{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%)    );
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+
+h2{
+    color:  hsla(220, 60%, 98%, 0.576);
+    margin-bottom: 30px;
+}
+
+.container{
+    text-align: center;
+}
+
+.circle{
+    background: linear-gradient( hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    padding: 40px;
+    border-radius: 50%;
+    padding-left: 55px;
+    padding-right: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.your_result{
+    color: hsl(0, 0%, 100%);
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.div1{
+    text-align: center;
+}
+
+.max_result{
+    color: hsla(240, 1%, 66%, 0.576);
+    font-weight: 700;
+}
+
+.result{
+    text-align: center;
+    color: hsla(220, 60%, 98%, 0.576);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -60px;
+}
+
+.score{
+    color:  hsl(0, 0%, 100%);
+    margin-bottom: 80px;
+}
+
+.h2{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.right_side{
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.reaction .image_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.reaction{
+    display: flex;
+    flex-direction: row;
+    background-color:  hsla(0, 100%, 87%, 0.238);
+    width: 100%;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.res{
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+span{
+    color: black;
+    font-weight: 800;
+    margin-right: 5px;
+}
+
+.res p{
+    color: rgb(186, 185, 185);
+    font-weight: 800;
+}
+
+.res{
+    display: flex;
+    flex-direction: row;
+}
+
+.number{
+    margin-left: 5px;
+}
+
+.memory{
+    display: flex;
+    flex-direction: row;
+}
+
+.memory .image_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.me{
+    color: hsl(39, 100%, 56%);
+    margin-left: 10px;
+}
+
+.memory{
+    display: flex;
+    flex-direction: row;
+    background-color:  hsla(39, 100%, 88%, 0.402);
+    width: 100%;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.verbel{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(166, 100%, 91%, 0.371);
+    width: 100%;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.verbel .image_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.ve{
+    margin-left: 10px;
+    color: hsl(166, 100%, 37%);
+}
+
+.visual{
+    display: flex;
+    flex-direction: row;
+    background-color: hsla(234, 81%, 83%, 0.242);
+    width: 100%;
+    border-radius: 6px;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.visual .image_div{
+    display: flex;
+    flex-direction: row;
+}
+
+.vi{
+    color: hsl(234, 85%, 45%);
+    margin-left: 10px;
+}
+
+.colors{
+    display: grid;
+    row-gap: 15px;
+}
+
+.continue{
+    width: 100%;
+}
+
+button{
+    width: 100%;
+    color: hsl(225, 5%, 85%);
+    background-color: hsl(224, 30%, 27%);
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 40px;
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+button:hover{
+    background: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%)    );
+    color: white;
+}
