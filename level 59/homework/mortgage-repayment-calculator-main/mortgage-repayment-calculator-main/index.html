@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  <!-- The main tag -->
+
+  <main id="main">
+    <!-- The left side of main tag -->
+     <div class="left_side">
+      <!-- title -->
+       <div class="title">
+        <h2>Mortgage Calculator</h2>
+        <p onclick="clear()">Clear All</p>
+       </div>
+
+       <div id="mortage_amount">
+        <form id="myForm">
+          <div class="div1">
+            <p class="Mortgage">Mortgage Amount</p>
+            <div onclick="changeBorderColor()" class="input1">
+              <div id="euro">
+                <p id="logo">$</p>
+              </div>
+              <input type="text" name="amount" id="amount"> <br>
+            </div>
+            <div id="field"></div>
+          </div>
+          <div class="team">
+            <div class="div2">
+              <p class="Mortgage">Mortgage Term</p>
+              <div class="input2" onclick="changeColor()">
+                <input type="text" name="years" id="years">   
+                <div id="year">
+                  <p id="logo1">years</p>
+                </div>
+              </div>
+              <div id="field1"></div>
+            </div>
+            <div class="div3">
+              <p class="Mortgage">interest Rate</p>
+              <div class="input3" onclick="change()">
+                <input type="text" name="rate" id="rate"> 
+                <div id="pro">
+                  <p id="logo2">%</p>
+                </div>
+              </div>
+              <div id="field2"></div>
+            </div>
+          </div>
+          <div id="radio">
+            <p class="Mortgage">Mantgage Type</p>
+            <div id="radio1">
+              <input onclick="changeRadio()"  type="radio" name="type" value="1" id="repayment">
+              <label onclick="changeRadio()" for="repayment">Repayment</label>
+            </div>
+            <div id="radio2">
+              <input onclick="changeRadio1()" type="radio" name="type" id="interset">
+              <label onclick="changeRadio1()" for="interset">Interest Only</label>
+            </div>
+            <div id="field3"></div>
+          </div>
+          <button type="submit"><img src="./assets/images/icon-calculator.svg" alt="">Calculate Repayments</button>
+        </form>
+       </div>
+     </div>
+
+     <!-- The right side of main tag -->
+      <div class="right_side">
+        <div id="image">
+          <img src="./assets/images/illustration-empty.svg" alt="">
+          <h2>Results shown here</h2>
+          <div class="info">
+            <p>Complete the form and click "calculate repayments" to see what your monthly repayments would be.<p>
+          </div>
+        </div>
+
+        <div id="result">
+          <div class="my">
+            <h2 class="my_res">Your results</h2>
+            <p class="p1">Your results are shown below bassed on the information <br>
+            you provided. To adjust the results. edit the form and <br>
+            click "calculate repayments" again.</p>
+          </div>
+
+          <div class="monthly_result">
+            <div class="number">
+              <p>Your monthly repayments</p>
+            <h1 id="finalyResult">$1,797.74</h1>
+            </div>
+            <div class="repay">
+              <p class="p2">Total you'will repay over term</p>
+              <h2 class="total">$539,322.94</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+  <script src="./JS/script.js"></script>
+</body>
+</html>
