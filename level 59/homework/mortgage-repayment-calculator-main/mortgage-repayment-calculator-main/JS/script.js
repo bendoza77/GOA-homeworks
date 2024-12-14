@@ -20,10 +20,17 @@ const radio2 = document.getElementById("radio2");
 const image = document.getElementById("image");
 const result = document.getElementById("result");
 const finalyResult = document.getElementById("finalyResult");
+const repay = document.getElementById("total");
 let total = 0;
 
-
 result.style.opacity = "0";
+
+
+function clearForm(){
+    result.style.opacity = "0";
+    image.style.opacity = "1";
+    document.getElementById("myForm").reset();
+}
 
 function changeBorderColor(){
     amount.style.borderColor = "hsl(61, 70%, 52%)";
@@ -169,11 +176,20 @@ myForm.addEventListener("submit", function(e){
         main.style.height = "69";
     }
 
-    if(repayment.checked || interset.checked && rate.value.trim() !== "" && years.value.trim() !== "" && amount.value.trim() !== ""){
+    if(repayment.checked  && rate.value.trim() !== "" && years.value.trim() !== "" && amount.value.trim() !== ""){
         image.style.opacity = "0";
         result.style.opacity = "1";
         total = Math.round(Number(amount.value) / Number(years.value) * Number(rate.value),2);
         finalyResult.textContent = total;
+        repay.textContent = total * 400000;
+    }
+
+    if(interset.checked && rate.value.trim() !== "" && years.value.trim() !== "" && amount.value.trim() !== ""){
+        image.style.opacity = "0";
+        result.style.opacity = "1";
+        total = Math.round(Number(amount.value) * 2 / Number(years.value) * Number(rate.value),2);
+        finalyResult.textContent = total;
+        repay.textContent = total * 400000;
     }
 
     
