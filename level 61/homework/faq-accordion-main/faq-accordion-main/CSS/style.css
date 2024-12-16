@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+
+
+
+
+body{
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url("../assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -490px;
+    font-family: "Work Sans", serif;
+}
+
+main{
+    background-color: white;
+    width: 30%;
+    height: 60%;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 35px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.first_question p{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+
+.first_question p:active{
+    color: hsl(293, 77%, 52%);
+}
+
+.first_question {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(292, 53%, 38%, 0.16);
+    cursor: pointer;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.second_question{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(292, 53%, 38%, 0.16);
+    cursor: pointer;
+}
+
+.second{
+    display: flex;
+    flex-direction: row;
+    gap: 246px;
+}
+
+.second_question p{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+
+.second_question p:active{
+    color: hsl(293, 77%, 52%);
+}
+
+
+.title{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.title img{
+    cursor: pointer;
+}
+
+.third_question{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    border-bottom: 1px solid hsla(292, 53%, 38%, 0.16);
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.third{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.third_question p{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+
+.third_question p:active{
+    color: hsl(293, 77%, 52%);
+}
+
+.title h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+.fourth_question{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.fourth{
+    display: flex;
+    flex-direction: row;
+    gap: 78px;
+}
+
+.fourth_question p{
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+}
+
+.fourth_question P:active{
+    color: hsl(293, 77%, 52%);
+}
+
+#answer1 p{
+    font-size: 15px;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}
+
+#answer2 p{
+    font-size: 15px;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}
+
+#answer3 p{
+    font-size: 15px;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}
+
+#answer4 p{
+    font-size: 15px;
+    color: hsl(292, 16%, 49%);
+    font-weight: 400;
+}

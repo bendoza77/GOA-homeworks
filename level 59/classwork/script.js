@@ -10,6 +10,9 @@ const userDiv = document.getElementById("userDiv");
 const emailDiv = document.getElementById("emailDiv");
 const passwordDiv = document.getElementById("passwordDiv");
 const genderDiv = document.getElementById("genderDiv");
+const country =document.getElementById("country");
+const countryDiv = document.getElementById("countryDiv");
+
 
 myForm.addEventListener("submit", function(e){
     e.preventDefault();

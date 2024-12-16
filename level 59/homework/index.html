@@ -1,1 +1,46 @@
-<!-- დავალებად frontend mentor იყო-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- Task 2 -->
+
+    
+    <form id="myForm">
+        <input type="text" id="user" name="userName" placeholder="Enter Your Name" > <br><br>
+        <input type="email" id="userEmail" name="email" placeholder="Enter Your Email"> <br><br>
+        <input type="password" id="userPassword" name="password" placeholder="Enter Your Password"> <br><br>
+        <label for="gender">Choose Your Gender</label> 
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select> <br><br>
+        <label for="country">Select Country</label>
+        <select name="country" id="country">
+            <option value="georgia">Georgia</option>
+            <option value="ukrain">Ukrain</option>
+            <option value="Belgua">Belgua</option>
+            <option value="german">German</option>
+            <option value="france">France</option>
+        </select> <br> <br>
+        <label for="rules">Accept Wesite Rules</label>
+        <input type="checkbox" id="rules" name="rules"> <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="userDiv"></div>
+    <div id="emailDiv"></div>
+    <div id="passwordDiv"></div>
+    <div id="genderDiv"></div>
+    <div id="countryDiv"></div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
