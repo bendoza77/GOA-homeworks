@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Contact form</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  <!-- The Main Tag -->
+
+  <div id="alert">
+    <div class="img">
+      <img src="./assets/images/icon-success-check.svg" alt="">
+      <h3>Message Sent!</h3>
+    </div>
+    <p>Thanks for completing the form. we'll be in touch soon!</p>
+  </div>
+
+  <main id="main" onclick="alertNone()">
+    <div class="title">
+      <h1>Contact Us</h1>
+    </div>
+
+    <form id="myForm">
+      <div class="container">
+        <div class="name" onclick="changeName()">
+          <label onclick="" for="userName">First Name <span>*</span></label>
+          <input type="text" name="userName" id="userName">
+          <p id="nameError"></p>
+        </div>
+
+        <div class="last_name" onclick="changeLastName()">
+          <label for="lastName">Last Name <span>*</span></label>
+          <input type="text" name="lastName" id="lastName">
+          <div id="lastNameError"></div>
+        </div>
+      </div>
+
+
+      <div class="email_input" onclick="changeEmail()">
+        <label for="email">Email Address <span>*</span></label> <br>
+        <input type="email" name="email" id="email">
+        <div id="emailError"></div>
+      </div>
+
+     <div class="container1">
+      <div class="type">
+        <p>Query Type <span>*</span></p>
+      </div>
+      <div class="chekbox">
+        <div id="generalInput">
+          <input onclick="changeGeneral()" type="radio" name="radio" id="general">
+          <label onclick="changeGeneral()" for="general">General Enquiry</label>
+          <img id="radio1" src="./assets/images/icon-radio-selected.svg" alt="">
+        </div>
+
+        <div id="supportInput">
+          <input onclick="changeSupport()" type="radio" name="radio" id="support">
+          <label onclick="changeSupport()"  for="support">Support Request</label>
+          <img id="radio2" src="./assets/images/icon-radio-selected.svg" alt="">
+        </div> 
+      </div>
+      <div id="radioError"></div>
+     </div>
+
+
+
+     <div class="message">
+      <label for="message">Message <span>*</span></label> <br>
+      <input type="text" name="message" id="message">
+     </div>
+
+     <div class="cheke">
+      <input onclick="changeCheckeBox()" type="checkbox" name="checkbox" id="checkbox">
+      <label onclick="changeCheckeBox()" for="checkbox">I consent to being contact by the team <span>*</span></label>
+      <img onclick="changeCheckeBox()" id="img" src="./assets/images/icon-checkbox-check.svg" alt="">
+     </div>
+     <div id="chekeError"></div>
+
+
+     <div class="submit">
+      <button type="submit">Submit</button>
+     </div>
+    </form>
+  </main>
+
+<script src="./JAVASCRIPT/script.js"></script>
+</body>
+</html>

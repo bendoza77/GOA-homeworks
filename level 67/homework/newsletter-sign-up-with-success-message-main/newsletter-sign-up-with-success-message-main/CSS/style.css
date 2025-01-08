@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(235, 18%, 26%);
+    font-family: "Roboto", serif;
+}
+
+
+main{
+    background-color: white;
+    width: 60%;
+    height: 85%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.left_side{
+    height: 100%;
+    width: 60%;
+    padding: 80px;
+}
+
+.left_side h1{
+    font-size: 50px;
+}
+
+.titel{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.info{
+    margin-top: 20px;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.measuring{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.measuring img{
+    width: 6%;
+}
+
+.more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+#email{
+    width: 100%;
+    height: 55px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 20px;
+    border: 1px solid  hsla(231, 7%, 60%, 0.822);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#secondMainInfo{
+    line-height: 25px;
+    margin-top: 40px;
+}
+
+.second_title{
+    line-height: 60px;
+}
+
+#myBtn{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#myBtn button{
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    background-color:  hsl(234, 29%, 20%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#myBtn button:hover{
+    background: linear-gradient(hsl(344, 100%, 67%), hsl(4, 100%, 67%),hsl(4, 100%, 67%));
+    box-shadow: 0 0 50px hsl(4, 100%, 67%);
+
+}
+
+.second_title h1{
+    margin-top: 20px;
+}
+
+#secondMain{
+    background-color: white;
+    width: 33%;
+    height: 70%;
+    position: absolute;
+    border-radius: 30px;
+    padding: 70px;
+}
+
+.second_title h1{
+    font-size: 60px;
+}
+
+.error{
+    display: flex;
+    flex-direction: row;
+}
+
+#valid{
+    color: hsl(4, 100%, 67%);
+    font-size: 13px;
+    font-weight: 700;
+    margin-left: 200px;
+}
+
+.email_input{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.email_input label{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.more img{
+    width: 6%;
+}
+
+.subscribe{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.subscribe button{
+    width: 100%;
+    height: 55px;
+    border-radius: 8px;
+    border: none;
+    background-color:  hsl(234, 29%, 20%);
+    color: white;
+    font-weight: 700;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.result{
+    margin-top: 30px;
+}
+
+.product img{
+    width: 6%;
+}
+
+.subscribe button:hover{
+    background: linear-gradient(hsl(344, 100%, 67%), hsl(4, 100%, 67%),hsl(4, 100%, 67%));
+}
+
+.info p{
+    line-height: 25px;
+    font-size: 16px;
+}
+
+
+.right_side{
+    width: 40%;
+    height: 100%;
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#error{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#error p{
+    margin-left: 200px;
+    font-size: 14px;
+    color: hsl(4, 100%, 67%);
+    font-weight: 700;
+}
+
