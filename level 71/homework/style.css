@@ -1,0 +1,12 @@
+.container{
+    background-color: green;
+    width: 700px;
+    height: 700px;
+}
+
+#cube{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
