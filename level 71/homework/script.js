@@ -1,3 +1,5 @@
+// Task 1
+
 // in this line of code  html element and js file beacuse i want to get animation for thi html element.
 const cube = document.getElementById("cube");
 
@@ -40,3 +42,38 @@ const moveCube = setInterval(function(){
     cube.style.top = `${y}px`
 
 }, 10)
+
+
+
+// Task 2
+
+const childCube = document.getElementById("childCube");
+
+let x1 = 0;
+let y1 = 0;
+
+
+document.addEventListener("keydown", function(e){
+
+    if(e.key === "s" || e.key === "S"){
+        y1 -= 10;
+        if(y1 > -716){
+            childCube.style.bottom = `${y1}px`
+        }
+    } else if(e.key === "D" || e.key === "d"){
+        x1 += 10
+        if (x1 < 616){
+            childCube.style.left = `${x1}px`
+        }
+    } else if(e.key === "a" || e.key === "A"){
+        x1 -= 10
+        if (x1 > 6){
+            childCube.style.left = `${x1}px`
+        }
+    } else if(e.key === "w" || e.key === "W"){
+        y1 += 10
+        if(y1 < -100){
+            childCube.style.bottom = `${y1}px`
+        }
+    }
+})

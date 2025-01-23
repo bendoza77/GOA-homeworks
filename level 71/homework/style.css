@@ -1,3 +1,5 @@
+/* Task 1 */
+
 .container{
     background-color: green;
     width: 700px;
@@ -10,3 +12,20 @@
     height: 100px;
     position: absolute;
 }
+
+/* Task 2 */
+
+.parent_cube{
+    width: 702px;
+    height: 702px;
+    background-color: green;
+    margin-top: 100px;
+}
+
+#childCube{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
