@@ -1,0 +1,30 @@
+#container{
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#child{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#container1{
+    background-color: green;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+#child1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
