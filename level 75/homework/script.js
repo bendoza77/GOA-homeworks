@@ -119,7 +119,7 @@ function exampleOne(){
 }
 
 exampleOne()
-// console.log(a) Cant call value if its in function or in block
+// console.log(a) Can call value if its in function or in block if we create value by var keyword
 
 
     // let a = 10 we cant call this beacuse its global value
