@@ -1,3 +1,11 @@
+// Task 1
+
+// async is a keyword for creating a function that returns a Promise, while the await keyword, 
+// which only works with the async keyword, is a keyword used to pause a function until 
+// the Promise is terminated, i.e., until the Promise is resolved or rejected.
+
+// Task 2
+
 const myForm = document.getElementById("myForm");
 const result = document.getElementById("result");
 const btn = document.getElementById("btn");
