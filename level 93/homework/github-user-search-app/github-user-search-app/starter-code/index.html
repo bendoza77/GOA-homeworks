@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body id="body">
+
+
+  <!-- The main tag -->
+
+  <main>
+    <div class="title">
+      <h1 id="mainTitle">devfinder</h1>
+      <div class="light" onclick="changeLight()">
+        <p id="Light">LIGHT</p>
+        <img id="sun" src="./assets/icon-sun.svg" alt="">
+      </div>
+    </div>
+
+    <!-- The search bar -->
+     <div id="search">
+      <!-- The text -->
+       <form id="myForm">
+        <img src="./assets/icon-search.svg" alt="">
+        <input type="text" name="userName" placeholder="Search GitHub username..." id="userName">
+       </form>
+       
+       <!-- The search button -->
+        <button id="button" onclick="getInformation()">Search</button>
+     </div>
+
+     <!-- The information div -->
+
+     <div id="main">
+      <div class="info">
+        <div id="image"></div>
+
+        <div class="div">
+          <div class="names">
+            <div id="myName"></div> 
+            <div id="loginName"></div>
+            <div id="bio"></div>
+          </div>
+          <div id="date"></div>
+        </div>
+      </div>
+      <div id="folower">
+        <div class="string">
+          <div class="first">
+            <p>Repos</p>
+            <div id="repos"></div>
+          </div>
+          <div class="second">
+            <p>Followers</p>
+            <div id="followers"></div>
+          </div>
+          <div class="third">
+            <p>Following</p>
+            <div id="following"></div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="links">
+        <div id="firstLine">
+          <div class="location">
+            <img src="./assets/icon-location.svg" alt="">
+            <p id="local"></p>
+          </div>
+
+          <div class="website">
+            <img src="./assets/icon-website.svg" alt="">
+            <p id="web"></p>
+          </div>
+        </div>
+
+        <div id="secondLine">
+          <div class="twit">
+            <img src="./assets/icon-twitter.svg" alt="">
+            <p id="tw"></p>
+          </div>
+
+          <div class="job">
+            <img src="./assets/icon-company.svg" alt="">
+            <p id="co"></p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+
+<script src="./JAVASCRIPT/script.js"></script>
+</body>
+</html>
