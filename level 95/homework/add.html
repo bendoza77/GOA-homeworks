@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snap</title>
+    <link rel="stylesheet" href="./CSS/add.css">
+    <link rel="shortcut icon" type="x-icon" href="https://static.vecteezy.com/system/resources/previews/006/800/199/non_2x/creative-abstract-book-feather-logo-design-vector.jpg">
+</head>
+<body>
+    
+    <header>
+        <div class="image">
+            <a href="./index.html"><img src="./images/logo.svg" alt=""></a>
+        </div>
+
+        <div class="button">
+            <a href="./main.html"><button class="back">Books</button></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-image">
+            <img id="mainImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDVAJIs8-BNKzcZbbIWDAETO07u0oLdDid1w&s" alt="">
+        </div>
+
+        <div class="info">
+            <div class="par">
+                <p id="title"></p>
+                <p id="author"></p>
+            </div>
+
+            <div class="choose">
+                <button class="add" onclick="addBook()">Add to library If You <br> Alread Have Readen This Book</button>
+                <button class="chek1" onclick="cancel()">Do You Want To Read?</button>
+            </div>
+        </div>
+    </main>
+    
+
+    <script src="./JAVASCRIPT/main.js"></script>
+    <script src="./JAVASCRIPT/add.js"></script>
+</body>
+</html>

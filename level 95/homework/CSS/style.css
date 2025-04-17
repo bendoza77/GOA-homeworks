@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Epilogue", serif;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.login{
+    width: 110px;
+    height: 38px;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login:hover{
+    color: hsl(0, 0%, 8%);
+}
+
+.signin{
+    width: 110px;
+    height: 38px;
+    background: transparent;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signin:hover{
+    border: 1px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+}
+
+main{
+    display: flex;
+    height: 87.7vh;
+}
+
+.title{
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -50px;
+}
+
+.title p{
+    font-size: 18px;
+    line-height: 25px;
+    color: hsl(0, 0%, 41%);
+    margin-top: 50px;
+}
+
+.image{
+    width: 30%;
+    margin-left: -100px;
+}
+
+
+
+.text{
+    margin-left: 150px;
+    margin-top: 130px;
+}
+
+.text h1{
+    font-size: 80px;
+}
+
+.co{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 200px;
+    gap: 50px;
+}

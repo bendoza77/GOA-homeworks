@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 30px;
+}
+
+body{
+    font-family: "Epilogue", serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88.6vh;
+}
+
+#email{
+    width: 350px;
+    height: 50px;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 6px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#password{
+    width: 350px;
+    height: 50px;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 6px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.password{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+button{
+    width: 350px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    background-color:  hsl(0, 0%, 41%);
+}
+
+.accounte{
+    font-size: 14px;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}

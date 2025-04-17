@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Epilogue", serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    justify-content: space-between;
+    background-color: white
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 10px;
+}
+
+.library{
+    width: 110px;
+    height: 38px;
+    color:  hsl(0, 2%, 23%);
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.library:hover{
+    color: black;
+}
+
+.contact-us{
+    width: 110px;
+    height: 38px;
+    color:  hsl(0, 2%, 23%);
+    border: 1px solid hsl(0, 2%, 23%);
+    background: transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-us:hover{
+    color: black;
+    border: 1px solid black;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+
+
+.top-book img{
+    width: 100%;
+    height: 100%;
+}
+
+.top-book{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: -70px;
+    margin-top: 1970px;
+}
+
+.book-div{
+    width: 15%;
+    margin-left: 82.5px;
+    box-shadow: 0 0 50px rgb(107, 105, 101);
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.book-div a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.book-div p{
+    margin-top: 10px;
+}
+
+.slider{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 5px;
+    scroll-behavior: smooth;
+}
+
+.sad-book{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: -70px;
+    margin-top: 140px;
+}
+
+.sad-book img{
+    width: 100%;
+    height: 100%;
+}
+
+.comedy-book img{
+    width: 100%;
+    height: 100%;
+}
+
+.comedy-book{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: -70px;
+    margin-top: 140px;
+}
+
+.world{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: -70px;
+    margin-top: 140px;
+}
+
+.world img{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(44, 41, 41);
+    margin-top: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userName{
+    width: 350px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#email{
+    width: 350px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    background-color: white;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+#add{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px gray;
+    position: absolute;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.choose{
+    margin-top: 150px;
+    gap: 10px;
+}
+
+.yes{
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+}
+
+.yes:hover{
+    background-color: black;
+    color: white;
+}
+
+.no{
+    color: white;
+    background: black;
+
+    font-weight: 500;
+}
+
+.no:hover{
+    color: black;
+    border: 1px solid black;
+}
