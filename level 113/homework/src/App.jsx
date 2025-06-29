@@ -1,4 +1,5 @@
 import MovieCard from "./components/MovieCard.jsx";
+import "./App.css"
 
 const App = () => {
 
