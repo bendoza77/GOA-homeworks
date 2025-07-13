@@ -4,7 +4,7 @@ const App = () => {
 
 
   const [count, setCount] = useState(localStorage.getItem("count"));
-
+  
   const handleCount = (e) => {
     e.preventDefault();
     const { time } = e.target; 
@@ -32,6 +32,8 @@ const App = () => {
 
     }, 1000)
 
+
+
     return;
     
     
@@ -43,7 +45,7 @@ const App = () => {
   }
 
   const handleStop = () => {
-    localStorage.setItem("count", "Countdown stoped");
+    localStorage.setItem("count", JSON.parse(localStorage.getItem("count")));
     setCount(localStorage.getItem("count"));
   }
 
