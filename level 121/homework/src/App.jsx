@@ -27,7 +27,7 @@ const App = () => {
   const handleApi = async (e) => {
     try {
       e.preventDefault();
-
+      const result = await fetchApi(e.target.city.value);
       if (e.target.city.value.trim() === "") {
         setData([{
           name: "Input cant be empty",
@@ -35,8 +35,14 @@ const App = () => {
           weather: [{main: "Input cant be empty", description: "Input cant be empty"}],
           wind: {speed: "Input cant be empty", deg: "Input cant be empty"},
         }])
+      } else if (result.cod === "404") {
+        setData([{
+          name: "City Not Found",
+          id: "City Not Found",
+          weather: [{main: "City Not Found", description: "City Not Found"}],
+          wind: {speed: "City Not Found", deg: "City Not Found"},
+        }])
       } else {
-        const result = await fetchApi(e.target.city.value);
         setData([result]);
       }
 
