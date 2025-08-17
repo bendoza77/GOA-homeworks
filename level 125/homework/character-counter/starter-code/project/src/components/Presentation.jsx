@@ -64,6 +64,7 @@ const Presentation = ({handleChange, character, check, chek1, word, sentence, ha
                             <p style={{color: mode ? "black" : "white"}}>{el[0].toUpperCase()}</p>
                             <div style={{backgroundColor: mode ? "#F2F2F7" : "#2A2B37"}} className="stats"><span style={{backgroundColor: "#D3A0FA", height: "100%", width: `${el[1]}%`, borderRadius: "50px"}}></span></div>
                             <p style={{color: mode ? "black" : "white"}}>{el[1]}</p>
+                            <p style={{color: mode ? "black" : "white"}}>({((el[1] / character) * 100).toFixed(2)}%)</p>
                         </div>
                         })}
                     </div>
