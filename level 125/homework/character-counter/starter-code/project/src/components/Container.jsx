@@ -13,6 +13,10 @@ const Container = () => {
     const [result, setResult] = useState([]);
     const seeMore = document.getElementById("seeMore");
     const seeLess = document.getElementById("seeLess");
+    const letter = "abcdefghijklmnopqrstuvwxyz";
+    const limit = document.getElementById("limit");
+    const userText = document.getElementById("userText");
+    const err = document.getElementById("err");
 
     useEffect(() => {
         document.title = "Character Counter"
@@ -27,246 +31,140 @@ const Container = () => {
     }
 
     document.body.style.backgroundImage = mode ? "url(./src/images/bg-light-theme.png)" : "url(./src/images/bg-dark-theme.png)"
+    const countElement = (arr, el) => {
+
+        let countArr = 0;
+
+        for (const i of arr) {
+            if (i === el) {
+                countArr += 1;
+            }
+        }
+
+        return countArr;
+
+    }
 
     useEffect(() => {
 
         const handleCountCharacter = () => {
-            const userText = document.getElementById("userText");
-            const limit = document.getElementById("limit").value;
-            const err = document.getElementById("err");
-            if (check === true && chek1 === true) {
-                if (userText.value.length <= Number(limit)) {
-                userText.style.border = "1px solid black";
-                userText.style.boxShadow = "none";
-                err.style.display = "none";
-                if (chek1 === false) {
-                    setCharacter(prev => prev = userText.value.trim().length);
-                } else if (chek1 === true) {
-                    setCharacter(prev => prev = userText.value.length);
-                }
+            
+            if (text.userText !== undefined) {
 
-                const userTextSplit = document.getElementById("userText").value.split(" ");
-                if (userTextSplit.length !== 1){
-                    setWord(prev => prev = userTextSplit.length - 1);
-                } else {
-                    setWord(prev => prev = "0");
-                }
-
-                const userTextSplit1 = document.getElementById("userText").value.split(".");
-                if (userTextSplit1.length !== 1) {
-                    setSentence(prev => prev = userTextSplit1.length - 1);
-                } else {
-                    setSentence(prev => prev = "0");
+                if (check && limit.value) {
+                    userText.setAttribute("maxLength", limit.value);
+                if (character > limit.value - 1) {
+                    userText.style.border = "1px solid #DA3701";
+                    userText.style.boxShadow = "0 0 10px #DA3701";
+                    err.style.display = "block"
+                } else if (character <= limit.value){
+                    userText.style.border = "1px solid #C27CF8";
+                    userText.style.boxShadow = "0 0 10px #C27CF8";
+                    err.style.display = "none"
+                    userText.removeAttribute("maxLength");
                     }
                 } else {
-                    userText.style.border = "1px solid #FE8159";
-                    userText.style.boxShadow = "0 0 10px #FE8159"
-                    err.style.display = "flex";
-                    return ;
+                    userText.style.border = "1px solid #C27CF8";
+                    userText.style.boxShadow = "0 0 10px #C27CF8";
+                    err.style.display = "none"
+                    userText.removeAttribute("maxLength");
                 }
-
-                setCharacter(prev => prev = userText.value.length);
-
-                const userTextSplit = document.getElementById("userText").value.split(" ");
-                const allEmpty = (value) => value === "";
-
-                if (userTextSplit.every(allEmpty)) {
-                    setWord(prev => prev = 0);
+                if (!chek1) {
+                    setCharacter(prev => prev = text.userText.length);
                 } else {
-                    setWord(prev => prev = userTextSplit.length - 1);
-                }
-
-
-                const userTextSplit1 = document.getElementById("userText").value.split(".");
-                const allDot = (value) => value === "";
-
-                if (userTextSplit1.every(allDot)) {
-                    setSentence(prev => prev = 0);
-                } else {
-                    setSentence(prev => prev = userTextSplit1.length - 1);
-                }
-
-
-
-            } else if (check === false) {
-                if (chek1 === false) {
-                    setCharacter(prev => prev = userText.value.trim().length);
-                } else if (chek1 === true) {
-                    setCharacter(prev => prev = userText.value.length);
-                }
-
-                const userTextSplit = document.getElementById("userText").value.split(" ");
-                const allEmpty = (value) => value === "";
-
-                if (userTextSplit.every(allEmpty)) {
-                    setWord(prev => prev = 0);
-                } else {
-                    setWord(prev => prev = userTextSplit.length - 1);
-                }
-
-
-                const userTextSplit1 = document.getElementById("userText").value.split(".");
-                const allDot = (value) => value === "";
-
-                if (userTextSplit1.every(allDot)) {
-                    setSentence(prev => prev = 0);
-                } else {
-                    setSentence(prev => prev = userTextSplit1.length - 1);
-                }
-                
-            } else if (check === true) {
-                if (userText.value.length <= Number(limit)) {
-                userText.style.border = "1px solid black";
-                userText.style.boxShadow = "none";
-                err.style.display = "none";
-                if (chek1 === false) {
-                    setCharacter(prev => prev = userText.value.trim().length);
-                } else if (chek1 === true) {
-                    setCharacter(prev => prev = userText.value.length);
-                }
-
-                const userTextSplit = document.getElementById("userText").value.split(" ");
-                if (userTextSplit.length !== 1){
-                    setWord(prev => prev = userTextSplit.length - 1);
-                } else {
-                    setWord(prev => prev = "0");
-                }
-
-                const userTextSplit1 = document.getElementById("userText").value.split(".");
-                if (userTextSplit1.length !== 1) {
-                    setSentence(prev => prev = userTextSplit1.length - 1);
-                } else {
-                    setSentence(prev => prev = "0");
+                    let filter = "";
+                    for (const i of (text.userText)) {
+                        if (i !== " ") {
+                            filter += i;
+                        }
                     }
-                } else {
-                    userText.style.border = "1px solid #FE8159";
-                    userText.style.boxShadow = "0 0 10px #FE8159"
-                    err.style.display = "flex";
-                return ;
-                }
-            }
-
-            setResult(prev => {
-
-                const handleCount = (arr, el) => {
-                let count = 0;
-
-                for (const i of arr) {
-                    if (i === el) {
-                    count += 1;
-                    }
+                    setCharacter(prev => prev = filter.length);
                 }
 
-                return count;
-                }
+                const countWord = text.userText.trim().split(" ").filter(el => el !== "");
+                setWord(prev => prev = countWord.length);
 
-                const letter = "abcdefghijklmnopqrstuvwxyz";
-                let result1 = [];
-                let dublicate = [];
-                for (const i of userText.value) {
-                if (!dublicate.includes(i)) {
-                    if (letter.includes(i.toLowerCase()) && result1.length <= 5) {
-                    result1 =  [...result1, [i, handleCount(userText.value, i), "flex"]];
-                    dublicate = [...dublicate, i];
+                const countSentence = text.userText.trim().split(".");
+                let result = [];
+                let first = "";
+
+                for (let i = 1; i < countSentence.length; i++) {
+                    if (countSentence[i].trim() === "") {
+                        first += countSentence;
                     } else {
-                    result1 =  [...result1, [i, handleCount(userText.value, i), "none"]];
-                    dublicate = [...dublicate, i];
+                        result.push(first);
+                        first = "";
                     }
-                } 
                 }
 
-                result1 = result1.sort((a, b) => b[1] - a[1]);
+                result.push(first);
 
-                return prev = result1;
-                
-            })
+                setSentence(prev => prev = result.length - 1);
+
+            }
 
         } 
 
         handleCountCharacter();
 
+        let filterText = new Set();
+        if (text.userText !== undefined) {
+            for (const i of text.userText) {
+                if (letter.includes(i)) {
+                    filterText.add(i);
+                }
+            }
+        }
         
-    }, [text])
+        let finalyResult1 = [];
+
+        for (const i of [...filterText].slice(0, 5)) {
+            finalyResult1.push([i, countElement(text.userText, i), ((character / countElement(text.userText, i)) * 100).toFixed(2)])
+        }
+
+        setResult(prev => prev = finalyResult1.sort((a, b) => b[1] - a[1]));
+
+
+    }, [text, check, chek1])
 
     const handleSeeMore = () => {
-        const see = document.getElementById("see");
-        setResult(prev => {
-
-            const handleCount = (arr, el) => {
-            let count = 0;
-
-            for (const i of arr) {
-                if (i === el) {
-                count += 1;
+        let filterText = new Set();
+        if (text.userText !== undefined) {
+            for (const i of text.userText) {
+                if (letter.includes(i)) {
+                    filterText.add(i);
                 }
             }
+        }
+        let finalyResult = [];
+        for (const i of [...filterText]) {
+            finalyResult.push([i, countElement(text.userText, i), ((character / countElement(text.userText, i)) * 100).toFixed(2)])
+        }
+        setResult(prev => prev = finalyResult.sort((a, b) => b[1] - a[1]));
 
-            return count;
-            }
-
-            const letter = "abcdefghijklmnopqrstuvwxyz";
-            let result1 = [];
-            let dublicate = [];
-            for (const i of userText.value) {
-            if (!dublicate.includes(i)) {
-                if (letter.includes(i.toLowerCase()) && result1.length <= 5) {
-                result1 =  [...result1, [i, handleCount(userText.value, i), "flex"]];
-                dublicate = [...dublicate, i];
-                } else {
-                result1 =  [...result1, [i, handleCount(userText.value, i), "flex"]];
-                dublicate = [...dublicate, i];
-                }
-            } 
-            }
-
-            seeMore.style.display = "none";
-            seeLess.style.display = "block";
-
-            result1 = result1.sort((a, b) => b[1] - a[1]);
-
-            return prev = result1;
-
-        })
+        seeLess.style.display = "block";
+        seeMore.style.display = "none";
     }
 
     const handleSeeLess = () => {
-        setResult(prev => {
-
-            const handleCount = (arr, el) => {
-            let count = 0;
-
-            for (const i of arr) {
-                if (i === el) {
-                count += 1;
+        let filterText = new Set();
+        if (text.userText !== undefined) {
+            for (const i of text.userText) {
+                if (letter.includes(i)) {
+                    filterText.add(i);
                 }
             }
+        }
 
-            return count;
-            }
+        let finalyResult1 = [];
+        for (const i of [...filterText].slice(0, 5)) {
+            finalyResult1.push([i, countElement(text.userText, i), ((character / countElement(text.userText, i)) * 100).toFixed(2)])
+        }
+        setResult(prev => prev = finalyResult1.sort((a, b) => b[1] - a[1]));
 
-            const letter = "abcdefghijklmnopqrstuvwxyz";
-            let result1 = [];
-            let dublicate = [];
-            for (const i of userText.value) {
-            if (!dublicate.includes(i)) {
-                if (letter.includes(i.toLowerCase()) && result1.length <= 5) {
-                result1 =  [...result1, [i, handleCount(userText.value, i), "flex"]];
-                dublicate = [...dublicate, i];
-                } else {
-                result1 =  [...result1, [i, handleCount(userText.value, i), "none"]];
-                dublicate = [...dublicate, i];
-                }
-            } 
-            }
+        seeLess.style.display = "none";
+        seeMore.style.display = "block";
 
-            seeMore.style.display = "block"
-            seeLess.style.display = "none";
-
-            result1 = result1.sort((a, b) => b[1] - a[1]);
-
-            return prev = result1;
-
-        })
     }   
 
     return <Presentation handleChange={handleChange} character={character} check={check} chek1={chek1} word={word} sentence={sentence} handleSeeLess={handleSeeLess} handleSeeMore={handleSeeMore} result={result} setCheck={setCheck} setChek1={setChek1} mode={mode}  setMode={setMode} />

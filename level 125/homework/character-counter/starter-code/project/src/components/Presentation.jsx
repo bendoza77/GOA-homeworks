@@ -39,7 +39,8 @@ const Presentation = ({handleChange, character, check, chek1, word, sentence, ha
                         <div className="chek2">
                             <input onClick={() => setCheck(!check)} type="checkbox" name="chek_limit" id="chek" />
                             <p style={{color: mode ? "black" : "white"}}>Set Character Limit</p>
-                            <input style={{width: 100, display: check ? "flex" : "none", alignItems: "center", justifyContent: "center", textAlign: "center", outline: "none"}} type="text" name="limit" id="limit"/>
+                            <input style={{width: 100, display: check ? "flex" : "none", alignItems: "center", justifyContent: "center", textAlign: "center", outline: "none"}} type="text" name="limit" id="limit" />
+
                         </div>
 
                     </div>
@@ -60,16 +61,16 @@ const Presentation = ({handleChange, character, check, chek1, word, sentence, ha
                     <p style={{fontSize: "1vw" ,color: mode ? "black" : "white"}}>{character === 0 ? "No characters found. Start typing to see letter density." : ""}</p>
                     <div className="letter_result">
                         {result.map((el, index) => {
-                        return <div style={{display: el[2]}} key={`letter ${index}`}>
-                            <p style={{color: mode ? "black" : "white"}}>{el[0].toUpperCase()}</p>
-                            <div style={{backgroundColor: mode ? "#F2F2F7" : "#2A2B37"}} className="stats"><span style={{backgroundColor: "#D3A0FA", height: "100%", width: `${el[1]}%`, borderRadius: "50px"}}></span></div>
-                            <p style={{color: mode ? "black" : "white"}}>{el[1]}</p>
-                            <p style={{color: mode ? "black" : "white"}}>({((el[1] / character) * 100).toFixed(2)}%)</p>
-                        </div>
+                            return <div key={`letter ${index}`}>
+                                <p style={{color: mode ? "black" : "white"}}>{el[0]}</p>
+                                <div style={{backgroundColor: mode ? "#F2F2F7" : "#2A2B37"}} className="stats"><span style={{backgroundColor: "#D3A0FA", height: "100%",  width: `${(el[1])}%`,  borderRadius: "50px"}}></span></div>
+                                <p>{el[1]}</p>
+                                <p>({el[1]}%)</p>
+                            </div>
                         })}
                     </div>
                     <p id="seeMore" onClick={handleSeeMore} style={{fontSize: "1vw",  color: mode ? "black" : "#c0c0c0ff", cursor: "pointer"}}>See more ˅</p>
-                    <p id="seeLess" onClick={(handleSeeLess)} style={{fontSize: "1vw", color: mode ? "black" : "#c0c0c0ff", cursor: "pointer", display: "none"}}>See less ˄</p>
+                    <p id="seeLess" onClick={handleSeeLess} style={{fontSize: "1vw", color: mode ? "black" : "#c0c0c0ff", cursor: "pointer", display: "none"}}>See less ˄</p>
                 </div>
                 
             </main>
