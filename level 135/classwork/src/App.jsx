@@ -1,21 +1,17 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useAsyncError, useNavigate, useSearchParams } from "react-router-dom";
 import ProtectedRote from "./components/ProtectedRote";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Authorization from "./pages/Authorization";
-import { useEffect, useState } from "react";
 import { GetLocalStorage, SetLocalStorage } from "./util/LocalStorage";
+import { useState } from "react";
 
 const App = () => {
 
   const [user, setUser] = useState(GetLocalStorage("user") || []);
   const [curUser, setCurUser] = useState(GetLocalStorage("curUser") || []);
-  const [same, setSame] = useState(false);
-  const [email, setEmail] = useState("");
-  const [pass, setPass] = useState("");
-  const [validEmail, setValidEmail] = useState(false);
-  const [validPassword, setValidPassword] = useState(false);
-
+  const [email, setEmail] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSame = (userArr) => {
 
@@ -33,32 +29,6 @@ const App = () => {
 
   const navigate = useNavigate();
 
-  useEffect(() => {
-
-    if (handleSame(user).includes(email)) {
-      setSame(true);
-    } else {
-      setSame(false);
-    }
-
-    if (email.trim() !== "") {
-      if (email !== curUser[1]) {
-        setValidEmail(true);
-      } else {
-        setValidEmail(false);
-      }
-    }
-
-    if(pass.trim() !== "") {
-      if (pass !== curUser[2]) {
-        setValidPassword(true);
-      } else {
-        setValidPassword(false);
-      } 
-    }
-
-  }, [email, pass])
-
   const handleRegister = (userForm) => {
 
     if (!handleSame(user).includes(userForm.userEmail)) {
@@ -68,11 +38,9 @@ const App = () => {
           SetLocalStorage("user", [...prev, [userForm.userName, userForm.userEmail, userForm.userPassword, userForm.role]])
           return [...prev, [userForm.userName, userForm.userEmail, userForm.userPassword, userForm.role]]
         })
-        setCurUser(prev => {
-          SetLocalStorage("curUser", [userForm.userName, userForm.userEmail, userForm.userPassword, userForm.role])
-          return [userForm.userName, userForm.userEmail, userForm.userPassword, userForm.role]
-        })
       }
+    } else {
+      setEmail(true);
     }
 
     
@@ -80,8 +48,25 @@ const App = () => {
 
   const handleAutho = (userForm) => {
 
-    if (userForm.userEmail === curUser[1] && userForm.userPassword === curUser[2]) {
+    const arr = handleSame(user);
+
+    if (arr.includes(userForm.userEmail) && arr.includes(userForm.userPassword)) {
       navigate("/");
+      setCurUser(prev => {
+          let newArr = [];
+
+          for (const i of user) {
+            if (i.includes(userForm.userEmail) && i.includes(userForm.userPassword)) {
+              newArr = i
+            }
+          }
+
+          SetLocalStorage("curUser", [newArr[0], newArr[1], newArr[2], newArr[3]])
+          return [newArr[0], newArr[1], newArr[2], newArr[3]]
+
+      })
+    } else {
+      setError(true);
     }
 
   }
@@ -99,8 +84,8 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<ProtectedRote curUser={curUser} ><Home handleLogOut={handleLogOut} user={user} curUser={curUser} /></ProtectedRote>} />
-        <Route path="/register" element={<Register email={email} setEmail={setEmail} same={same} handleRegister={handleRegister} />} />
-        <Route path="/autho" element={<Authorization validEmail={validEmail} validPassword={validPassword} setPass={setPass} setEmail={setEmail} handleAutho={handleAutho} />} />
+        <Route path="/register" element={<Register setEmail={setEmail} setError={setError} email={email} handleRegister={handleRegister} />} />
+        <Route path="/autho" element={<Authorization error={error} handleAutho={handleAutho} />} />
         <Route path="*" element={<h1>Page not found</h1>} />
       </Routes>
     </>
