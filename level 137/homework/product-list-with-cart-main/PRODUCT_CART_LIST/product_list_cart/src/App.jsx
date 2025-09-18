@@ -91,6 +91,7 @@ const App = () => {
     setOrder(true);
 
     document.body.style.opacity = "0.8"
+    document.body.classList.add("freeze");
 
   }
 
@@ -113,7 +114,7 @@ const App = () => {
     })
 
     document.body.style.opacity = "1"
-
+    document.body.classList.remove("freeze");
     }
 
 
