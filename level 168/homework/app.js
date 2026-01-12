@@ -124,6 +124,11 @@ const app = http.createServer((req, res) => {
         return res.end("Car id deleted");
         
     }
+
+    // Query These are additional options on the server, 
+    // for example, to filter a mass or delete an object specified by id. A 
+    // lot of information can be stored in a query, which is always additional information at the end 
+    // of the link and is not always, for example, the path and port or host.
 });
 
 // Start the server on port 3000
