@@ -48,18 +48,26 @@ const app = http.createServer((req, res) => {
     } else if (method === "GET", url.pathname === "/users") {
         const users = JSON.parse(fs.readFileSync("users.json", "utf-8"));
         if (url.search) {
-            const id = (url.search.slice(1).split("&").find(el => el.split("=")[0] === "id")).split("=")[1];
-            const isStudent = (url.search.slice(1).split("&").find(el => el.split("=")[0] === "isStudent")).split("=")[1];
+            const id = (url.search.slice(1).split("&").find(el => el.split("=")[0] === "id"));
+            const isStudent1 = (url.search.slice(1).split("&").find(el => el.split("=")[0] === "isStudent"));
+
+            let isStudent;
+
+            if (isStudent1) {
+                isStudent = isStudent1.split("=")[1];
+            }
 
             let user;
 
             if (id && isStudent) {
-                users.find(el => el.id === id && el.isStudent === isStudent);
+                user =  users.map(el => el.id === id && el.isStudent == isStudent);
             } else if (id) {
-                users.find(el => el.id === id);
+                user =  users.map(el => el.id === id);
             }  else if (isStudent) {
-                users.find(el => el.id === id);
+                user =  users.map(el => el.isStudent == isStudent);
             }
+
+            console.log(user);
 
             res.writeHead(200, {
                 "content-type": "application/json"
@@ -76,7 +84,7 @@ const app = http.createServer((req, res) => {
         
     } else if (method === "DELETE" && url.pathname === "/users") {
         const users = JSON.parse(fs.readFileSync("users.json", "utf-8"));
-        const id = (url.search.slice(1).split("&").find(el => el.split("=")[0] === "id")).split("=")[1];
+        const id = new URLSearchParams(url.search).get("id");
 
         if (!id) {
             return res.end("Id is required");
