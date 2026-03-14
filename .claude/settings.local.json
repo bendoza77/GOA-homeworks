@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:/Users/User/Desktop/goa homework/level 186/homework/client/src\" -name \"*.js\" -o -name \"*.jsx\" | xargs grep -l \"deleteUser\" 2>/dev/null)"
+    ]
+  }
+}
