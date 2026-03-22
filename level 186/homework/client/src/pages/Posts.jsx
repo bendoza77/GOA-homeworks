@@ -17,7 +17,6 @@ const Posts = () => {
         const postObj = {
             title: e.target.postTitle.value,
             description: e.target.postDescription.value,
-            author: e.target.postAuthor.value,
             userId: user.id
         }
 
@@ -30,7 +29,6 @@ const Posts = () => {
             <form onSubmit={handleSubmit}>
                 <input type="text" name="postTitle" placeholder="Enter Post Title" required/>
                 <input type="text" name="postDescription" placeholder="Enter Post Description" required/>
-                <input type="text" name="postAuthor" placeholder="Enter Post Author" required/>
                 <button>Create Post</button>
             </form>
             {user.length !== 0 && posts.map(el => {

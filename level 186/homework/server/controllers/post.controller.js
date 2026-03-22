@@ -13,10 +13,10 @@ const getPosts = (req, res) => {
 
 const createPost = (req, res) => {
 
-    const { title, description, author, userId } = req.body;
+    const { title, description, userId } = req.body;
     const posts = JSON.parse(fs.readFileSync("posts.json", "utf-8"));
 
-    if (!title || !description || !author || userId === undefined) {
+    if (!title || !description || userId === undefined) {
         return res.status(400).json({
             status: "fail",
             message: "All field is required"
@@ -26,7 +26,6 @@ const createPost = (req, res) => {
     const newPost = {
         id: posts.length === 0 ? 1 : posts[posts.length - 1].id + 1,
         userId: userId,
-        author: author,
         title: title,
         description: description
     }
@@ -151,6 +150,7 @@ const addComment = (req, res) => {
 
     const { id } = req.params;
     const { text } = req.body;
+    const { userId } = req.body;
     const posts = JSON.parse(fs.readFileSync("posts.json", "utf-8"));
 
     if (!id) {
@@ -177,8 +177,6 @@ const addComment = (req, res) => {
     }
 
     if (!post.comments) post.comments = [];
-
-    const { userId } = req.body;
 
     const newComment = {
         id: post.comments.length === 0 ? 1 : post.comments[post.comments.length - 1].id + 1,

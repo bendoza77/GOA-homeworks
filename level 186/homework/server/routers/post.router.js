@@ -3,15 +3,9 @@ const { getPosts, createPost, deletePost, getPostById, updatePostById, addCommen
 
 const postRouter = express.Router();
 
-postRouter.get("/", getPosts);
+postRouter.route("/").get(getPosts).post(createPost);
 
-postRouter.post("/", createPost);
-
-postRouter.get("/:id", getPostById);
-
-postRouter.patch("/:id", updatePostById);
-
-postRouter.delete("/:id", deletePost);
+postRouter.route('/:id').patch(updatePostById).delete(deletePost).get(getPostById);
 
 postRouter.post("/:id/comments", addComment);
 
